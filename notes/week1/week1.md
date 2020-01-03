@@ -71,6 +71,8 @@ $$
 \begin{array}{l}{\text { To establish notation for future use } x^{(i)} \text { to denote the "input" variables (living area in this example) also called input }} \\ {\text { features, and } y^{(i)} \text { to denote the "output" or target variable that we are tring t(price). A pair }\left(x^{i}\right), y^{(i)} \text { is called a }} \\ {\text { training example, and the dataset that well be learn-alist of mtraining examples }\left(x^{(i)}, y^{(i)}\right) ; i=1, \ldots, m \text { -is called }}{\text { atraining set. }} \\{ \text {Note that the superscript tip the notation is simply an index into the training set, and has nothing to dowith }} \\ {\text { exponentiaxtion. We will also use } x \text { to denote the space of input values, and } Y \text { to denote the space of output vautput values. In this }} \\ {\text { example, } x=Y=R .}\end{array}
 $$
 
+
+
 To describe the supervised learning problem slightly more formally, our goal is, given a training set, to learn a function h : X → Y so that h(x) is a “good” predictor for the corresponding value of y. For historical reasons, this function h is called a hypothesis. Seen pictorially, the process is therefore like this:
 
 ![h(x)](../images/h(x).png)
@@ -81,7 +83,7 @@ When the target variable that we’re trying to predict is continuous, such as i
 
 ## Cost Function
 
->**损失函数**(Loss/Error Function): 计算**单个**样本的误差。
+>**损失函数**(Loss/Error Function): 计算**单个**样本的误差。  
 >**代价函数**(Cost Function): 计算整个训练集**所有损失函数之和的平均值**。
 
 We can measure the accuracy of our hypothesis function by using a **cost function**. This takes an average difference (actually a fancier version of an average) of all the results of the hypothesis with inputs from x's and the actual output y's.
